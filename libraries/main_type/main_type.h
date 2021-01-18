@@ -60,8 +60,6 @@
 
   #endif
 
-  // Продолжительность тревоги в миллисекундах, после чего счётчики срабатываний обнуляются.
-  #define ALARM_MAX_TIME 60000
   // активируем флаг тревоги для сбора информации и отправки e-mail
   #define ALARM_ON  if(flags.GUARD_ENABLE && !flags.ALARM){flags.ALARM=1;modem->phone->ring(); \
                     param.tx->AddText_P(PSTR(ALARM_ON_STR));sensors->GetInfo(param.tx);param.tx->AddChar('\n'); \

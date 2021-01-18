@@ -39,7 +39,7 @@
 // GPRS_ON_OFF и SMS_ON_OFF (см https://github.com/wisenheimer/Signaling-Blynk/blob/master/README.md).
 // Отключить любой флаг можно, записав в него 0.
 //****************************************************
-#define OTCHET_INIT	flags.EMAIL_ENABLE=0;flags.SMS_ENABLE=0;flags.GUARD_ENABLE=0;
+#define OTCHET_INIT	flags.EMAIL_ENABLE=0;flags.SMS_ENABLE=1;flags.GUARD_ENABLE=0;
 //****************************************************
 //////////////////////////////////////////////////////////
 /// Изменить параметры под себя
@@ -79,8 +79,5 @@
 #define GMT 3
 // период синхронизации часов, мс
 #define SYNC_TIME_PERIOD 20000
-
-// Период мигания сигнального светодиода на 13 пине в режиме Охрана, сек
-#define LED_BLINK_PERIOD 3
 
 #endif // SETTINGS_H
