@@ -235,7 +235,7 @@ BLYNK_WRITE(GPS_BTN_PIN) {
 BLYNK_WRITE(GUARD_PIN) {
   
   // Включаем/отключаем охрану
-  flag[2].value = param.asInt();
+  flag[1].value = param.asInt();
 
   i2c_send_command(get_flags(),I2C_FLAGS);  
 }
